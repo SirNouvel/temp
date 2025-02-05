@@ -1,0 +1,85 @@
+a {
+    color: #00B7FF;
+}
+
+
+header {
+    background-color: #F6F8FF;
+    background-image: url("https://www.transparenttextures.com/patterns/basketball.png");
+    font-family: "Times New Roman"
+}
+
+#header {
+
+}
+
+.bg-light {
+    background-color: #9e0500;
+    background-image: url("https://www.transparenttextures.com/patterns/basketball.png");
+}
+
+.text-center {
+    padding-bottom:20px;
+}
+
+.navbar-light {
+    background-color: #9e0500;
+    background-image: url("https://www.transparenttextures.com/patterns/basketball.png");
+    font-weight: bold;
+    /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
+}
+
+.navbar-dark {
+    background-color: #F6F8FF 
+    
+}
+
+.navbar .dropdown-menu {
+    background-color: #9e0500;
+    background-image: url("https://www.transparenttextures.com/patterns/basketball.png");
+}
+
+
+}
+
+.nav-item:hover ul.dropdown-menu{
+    display: block;
+}
+
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 25%;
+}
+
+
+body {
+    background-color: #000000;
+    background-image: url("https://www.transparenttextures.com/patterns/basketball.png");
+    /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
+}
+
+
+bodyyy {
+    background-image: url("../imagesgg/smexy.jpg");
+        /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
+    background-size: cover background-repeat: repeat;
+    background-position: center;
+    height: 100vh;
+}
+
+section {
+    padding: 200px;
+    margin: 200px;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+}
+
+
