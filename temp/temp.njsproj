@@ -55,6 +55,8 @@
     <Content Include="public\javascripts\JavaScript.js">
       <SubType>Code</SubType>
     </Content>
+    <Content Include="public\videos\ehh.mp4" />
+    <Content Include="public\videos\film.mp4" />
     <Content Include="public\videos\footage.mp4" />
     <Content Include="routes\index.js" />
     <Content Include="routes\users.js" />
