@@ -1,9 +1,15 @@
-window.onscroll = function () { scrollFunction() };
 
-function scrollFunction() {
-    if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
-        document.getElementById("header").style.fontSize = "30px";
-    } else {
-        document.getElementById("header").style.fontSize = "90px";
-    }
-}
+window.addEventListener('load', function () {
+    // wait until the page loads before working with HTML elements
+    document.addEventListener('click', function (event) {
+        //click listener on the document
+        document.querySelectorAll('.dropdown-content').forEach(function (el) {
+            if (el !== event.target) el.classList.remove('show')
+            // close any showing dropdown that isn't the one just clicked
+        });
+        if (event.target.matches('.drop-button')) {
+            event.target.closest('.drop-down').querySelector('.dropdown-content').classList.toggle('show')
+        }
+        // if this is a dropdown button being clicked, toggle the show class
+    })
+})

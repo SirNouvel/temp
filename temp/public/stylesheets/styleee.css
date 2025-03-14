@@ -1,50 +1,22 @@
 @import url('https://fonts.googleapis.com/css2?Raleway&display=swap');
 
-
-a {
-    color: #00B7FF;
-}
-
-
-header {
-    background-color: #F6F8FF;
-    background-image: url("https://www.transparenttextures.com/patterns/basketball.png");
-    font-family: "Times New Roman"
-}
-
-.frontt {
-    back
-}
-
-
-#header {
-
-}
-
 .bg-light {
-    background-color: #9e0500;
-    background-image: url("https://www.transparenttextures.com/patterns/basketball.png");
-}
-
-.text-center {
-    padding-bottom:20px;
+    background-color: rgb(250 127 10 / 0.98)
 }
 
 .navbar-light {
-    background-color: #9e0500;
-    background-image: url("https://www.transparenttextures.com/patterns/basketball.png");
+    background: #ffefa2;
     font-weight: bold;
-    /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
+    z-index: 3;
 }
 
-.navbar-dark {
-    background-color: #F6F8FF 
-    
+.ribbon {
+    height: 50px;
+    background: #ffefa2;
+    width: 100%;
 }
 
-.navbar .dropdown-menu {
-    
-
+.navbar .dropdown-menu {    
     background-color: #9e0500;
     background-image: url("https://www.transparenttextures.com/patterns/basketball.png");
 }
@@ -53,27 +25,24 @@ li:hover ul.dropdown-menu {
     display: block;
 }
 
---bs-dropdown-link-color {
+a.dropdown-item {
     color: pink;
 }
 
-body {
-    background-color: #000000;
-    background-image: url("https://www.transparenttextures.com/patterns/basketball.png");
-    /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
+a.dropdown-item:hover {
+    background-color: green;
+    color: yellow;
+}
+
+ul.dropdown-menu {
+    padding: 0;
+    z-index: 2;
+    
+
 }
 
 bodyyy {
-    background-image: url("../imagesgg/smexy.jpg");
-        /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
-    background-size: cover background-repeat: repeat;
-    background-position: center;
-    height: 100vh;
-}
-
-section {
-    padding: 200px;
-    margin: 200px;
+    background-color: #FF8D21;
 }
 
 footer {
@@ -110,7 +79,7 @@ footer {
     .btn:hover {
         color: rgb(196, 6, 6);
         width: 335px;
-        background: rgb(255, 255, 255) none repeat scroll 0% 0% / auto padding-box border-box;
+        background: rgb(255, 255, 255) none repeat scroll 0% 0% / /*delete auto if you want it clear*/ auto padding-box border-box;
         border-color: rgb(255, 0, 0);
         border-width: 0px;
         border-style: solid;
@@ -122,8 +91,392 @@ footer {
     border-radius: 12px;
     border: 1px solid rgba(209, 213, 219, 0.18);
 }
-                    
-.loader {
-    height: 700px;
+
+
+
+
+
+
+
+/*
+    beginning of header
+*/
+.header {
+    flex-direction: column;
+    display: flex;
+    position: relative;
+    height: 20vh; 
+    width: 100%;
+    flex-wrap: nowrap;
+    justify-content: flex-end;
+}
+
+.header-top {
+    width: 100%;
+    background-color: #ffecae;
+    z-index: 0;
+    position: absolute;
+    height: 80%;
+    top: 0px;
+}
+
+.header-bottom {
+    background-color: #ff7d00;
+    width: 100%;
+    z-index: 0;
+    height: 20%;
+    bottom: 0px;
+    box-shadow: 0px 50px 33px -11px rgba(0,0,0,0.75);
+    position: absolute;
+}
+
+.header-ribbon {
+    padding-top: 45px;
+    position: absolute;
+    z-index: 1;
+    height: 275px;
+    left: 5%;
+    width: fit-content;
+    top: 0px;
+    background-color: brown;
+
+    --flapH: 6.0rem; /* control the cutout */
+    --col-gap: -2.0rem;
+    --roleH: 2.0rem;
+
+    background-image: linear-gradient( rgba(0, 0, 0, 0.6) var(--roleH), rgba(0, 0, 0, 0.4) calc(var(--roleH) + 0.5rem), rgba(0, 0, 0, 0) calc(var(--roleH) + 0.5rem + 5rem) );
+    clip-path: polygon( calc(var(--col-gap) / -2 - 5px) 0, calc(100% + var(--col-gap) / 2 + 5px) 0, calc(100% + var(--col-gap) / 2 + 5px ) calc(100% - var(--flapH)), 50% 100%, calc(var(--col-gap) / -2 - 5px) calc(100% - var(--flapH)) );
+}
+
+img.logo-style {
+    object-fit: scale-down;
     width: 100%;
 }
+
+.header-ribbon {
+    animation: bounce .6s cubic-bezier(0.7, 0, 0.84, 0) .0s 1 alternate forwards;
+}
+
+@keyframes bounce {
+    0% {
+        animation-timing-function: ease-in;
+        opacity: 0;
+        transform: translateY(-250px);
+    }
+
+    38% {
+        animation-timing-function: ease-out;
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+    55% {
+        animation-timing-function: ease-in;
+        transform: translateY(-65px);
+    }
+
+    72% {
+        animation-timing-function: ease-out;
+        transform: translateY(0);
+    }
+
+    81% {
+        animation-timing-function: ease-in;
+        transform: translateY(-28px);
+    }
+
+    90% {
+        animation-timing-function: ease-out;
+        transform: translateY(0);
+    }
+
+    95% {
+        animation-timing-function: ease-in;
+        transform: translateY(-8px);
+    }
+
+    100% {
+        animation-timing-function: ease-out;
+        transform: translateY(0);
+    }
+}
+
+
+.dropdown-group {
+    justify-content: flex-end;
+    display: flex;
+    height: 20%;
+    z-index: 1;
+    width: 100%;
+}
+
+.drop-down {
+    position: relative;
+    display: flex;
+    width: 90px;
+    border-style: solid;
+    border-width: 0px 0px 0px 3px;
+    border-left-color: #ff6c00;
+    justify-content: center;
+    background-color: #FF7D00;
+    color: white;
+    font-size: .9em;
+    cursor: pointer;
+    
+}
+
+a.drop-button {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+
+}
+
+.drop-down:hover, .drop-down:focus {
+    background-color: #ffffff;
+    color: #FF7D00;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 2;
+    top: 100%;
+    left: 0px;
+
+}
+
+    .dropdown-content a {
+        display: block;
+        color: white;
+        padding: 12px 16px;
+        text-decoration: none;
+        background-color: #fff5c5
+    }
+
+        .dropdown-content a:hover {
+            background-color: #ffefa2;
+        }
+
+.right {
+    right: 0px;
+    left: unset;
+}
+
+.show {
+    display: block;
+}
+
+.drop-down:hover .droddpdown-content {
+    display: block;
+}
+
+/*
+    end of header 
+*/
+/*
+       FRONT PAGE
+
+   start of video loader
+*/
+.loader-container {
+    height: 70vh;
+    width: 100%;
+    position: relative;
+}
+
+.video-box {
+    z-index: 0;
+    position: absolute;
+    top: 0px;
+    width: 100%;
+}
+
+video.style {
+    display: inline;
+    object-fit: cover;
+    width: inherit;
+    height: 70vh;
+    visibility: visible;
+    opacity: 1;
+}
+
+.captions {
+    position: absolute;
+    z-index: 0;
+    bottom: 0px;
+    height: inherit;
+    width: inherit;
+}
+
+/*
+    end of video loader
+*/
+/*
+    start of something
+*/
+.end-break {
+    width: 100%;
+    background-color: wheat;
+    height: 10vh;
+}
+
+
+/*
+     COSTOMOLGY PAGE
+
+    Title beginning
+*/
+
+.program-title {
+    margin: auto;
+    width: 80%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.program-subtitle {
+    font-size: 20px;
+    margin-top: -10px;
+    border-color: #b91515;
+    border-left-style: solid;
+    padding-left: 5px;
+}
+/*
+    title end
+*/
+/*
+    beginning of summary
+*/
+.summary-portion {
+    margin-left: auto;
+    width: 90%;
+    padding-top: 20px;
+    padding-bottom: 35px;
+    height: 100%;
+}
+
+divWords {
+    font-size: 15px;
+    width: 90%;
+    height: 100%;
+    padding-top: 50px;
+    display: block;
+}
+
+.photo {
+    float: right;
+    margin-top: -50px;
+    height: 280px;
+    width: 250px;
+    margin-left: 80px;
+    margin-right: 50px;
+    padding-top: 35px;
+    margin-bottom: 30px;
+}
+
+/*
+    end summary
+*/
+/*
+    beginning of ribbion
+*/
+
+.ribbonn {
+    height: 50px;
+    background: #FF8D21;
+    width: 100%;
+    clear: both;
+}
+
+button.button {
+    height: 100%;
+    width: 20%;
+    margin-left: 40%;
+    margin-right: 40%;
+}
+
+/*
+    end of ribbon
+*/
+/*
+    beginning table title
+*/
+.course-info {
+    margin: auto;
+    width: 80%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+divtitle {
+    font-size: 32px;
+    padding-left: 5px;
+}
+/*
+    end of table title
+*/
+/*
+    beginning of table design
+*/
+.divTable {
+    border: 2px solid #ff7d00;
+    background-color: #ffffff;
+    width: 100%;
+    display: table;
+}
+
+.divHeadTable {
+    background-color: rgb(255 125 0 / 0.32);
+    display: table-header-group;
+    font-weight: 600;
+    font-sizegg: 20px;
+}
+
+.divRowTable {
+    display: table-row;
+    
+}
+
+
+
+..divRowTable:nth-child(even) {
+    background-color: #fff1f1;
+}
+
+.divRowTable .divCell:nth-child(even) {
+    background-color: #fff1f1;
+}
+
+
+
+
+.divRowTable .divCell {
+    padding-left: 50px;
+    padding-bottom: 5px;
+}
+
+.divCell {
+    display: table-cell;
+    padding-left: 30px;
+    padding-top: 15px;
+    border: solid .5px rgb(255 125 0 / 0.25)
+}
+
+.divFoot {
+    background-color: #ff7d00;
+    display: table-footer-group;
+    color: #ffffff;
+}
+
+/*
+    end of table design
+*/
+
+
+
+
+
+
