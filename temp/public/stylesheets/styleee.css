@@ -32,13 +32,6 @@
         border-style: solid;
     }
 
-.card {
-    backdrop-filter: blur(3px) saturate(100%);
-    background-color: rgba(0,0,0, 0.05);
-    border-radius: 12px;
-    border: 1px solid rgba(209, 213, 219, 0.18);
-}
-
 
 
 
@@ -90,7 +83,7 @@
 .header-ribbon {
     padding-top: 45px;
     position: absolute;
-    z-index: 1;
+    z-index: 4;
     height: 275px;
     left: 5%;
     width: fit-content;
@@ -133,7 +126,7 @@ img.logo-style {
     justify-content: flex-end;
     display: flex;
     height: 20%;
-    z-index: 1;
+    z-index: 4;
     width: 100%;
 }
 
@@ -203,12 +196,13 @@ a.drop-button {
     display: block;
 }
 
-/*    fix laterrrrrr */
+/*    fix laterrrrrr
 
 .show:not(:hover) .dropdown-content {
     display: none;
 } 
 
+*/
 
 ..drop-down:hover .dropdown-content {
     display: block;
@@ -230,6 +224,7 @@ a.drop-button {
     height: 75vh;
     width: 100%;
     position: relative;
+    --magic: 0%;
 }
 
 .video-box {
@@ -256,11 +251,113 @@ video.style {
     bottom: 0px;
     height: inherit;
     width: inherit;
+    display: flex;
+    justify-content: center;
+    align-items: center
+
 }
+
+.overlay {
+    text-align: center;
+    height: fit-content;
+}
+
+.button-box {
+    display: flex;
+    justify-content: center;
+}
+
+/*      testing with some fonts
+.top-words {
+
+}
+
+.bottom-words {
+
+}
+*/
 
 /*
     end of video loader
 */
+/*
+    start of register feed
+*/
+
+
+#kms {
+    display: ;
+}
+
+.cool {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    display: none;
+}
+
+.video-cover {
+    width: 100%;
+    height: 100%;
+    z-index: 3;
+    position: absolute;
+    background-color: firebrick;
+    animation: grower 1.5s cubic-bezier(0.075, 0.820, 0.165, 1.000);
+    animation-fill-mode: forwards;
+}
+
+@keyframes grower {
+    0%    {
+        height: 0%;
+    }
+
+    40%   {
+        height: 100%;
+    }
+
+    60%   {
+        height: 100%;
+    }
+
+    100%  {
+        height: 0%;
+    }
+}
+
+
+
+.feed {
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+    position: absolute;
+    background-color: antiquewhite;
+    opacity: var(--magic);
+    animation: appear 1.5s cubic-bezier(0.075, 0.820, 0.165, 1.000);
+    animation-fill-mode: forwards;
+}
+
+@keyframes appear {
+    0% {
+        --magic: 0%;
+    }
+
+    40% {
+        --magic: 0%;
+    }
+
+    41% {
+        --magic: 100%;
+    }
+
+    100% {
+        --magic: 100%;
+    }
+}
+
+
+
+
 /*
     start of something
 */

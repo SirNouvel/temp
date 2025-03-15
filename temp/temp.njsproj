@@ -56,7 +56,8 @@
     <Content Include="public\images\ughhh.png" />
     <Content Include="public\images\logo.png" />
     <Content Include="public\images\smexy.jpg" />
-    <Content Include="public\javascripts\JavaScript.js">
+    <Content Include="public\javascripts\button.js" />
+    <Content Include="public\javascripts\dropdown.js">
       <SubType>Code</SubType>
     </Content>
     <Content Include="public\videos\ehh.mp4" />

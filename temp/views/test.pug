@@ -68,21 +68,29 @@
             </div>
         </div>
 
-        <div class="loader-container" >
+        <div class="loader-container">
             <div class="video-box">
                 <video class="style" loop autoplay muted>
                     <source src="videos/footage.mp4" type="video/mp4">
                 </video>
             </div>
             <div class="captions">
-                <div class="px-4 py-5 my-5 text-center">  
+                <div class="overlay">
                     <h1 class="display-5 fw-bold text-body-emphasis">Be who you want to be</h1>
-                    <div class="col-lg-6 mx-auto">
-                        <p class="lead mb-4">We're here to help you create you</p>
-                        <div class="d-grid gap-2 d-sm-flex justify-content-center">
-                            <button class="btn" style="" id="customBtn">Register Today<img src="https://www.htmlcssbuttongenerator.com/iconExample-plus-square-multiple-lined.svg" id="newIdIcon" style="width: 41px; margin-left: 3px; margin-right: 9px;"></button>
-                        </div>
+                    <p class="lead mb-4">We're here to help you create you</p>
+                    <div class="button-box">
+                        <button class="btn" onclick="myFunction()">Register Today
+                            <img src="https://www.htmlcssbuttongenerator.com/iconExample-plus-square-multiple-lined.svg" id="newIdIcon" style="width: 41px; margin-left: 3px; margin-right: 9px;">
+                        </button>
                     </div>
+                </div>
+            </div>
+            <div class="cool" id="kms">
+                <div class="video-cover">
+
+                </div>
+                <div class="feed">
+
                 </div>
             </div>
         </div>
@@ -90,6 +98,7 @@
             <div class="idunno">
             </div>
         </div>
-        <script src="javascripts/JavaScript.js"></script>
+        <script src="javascripts/dropdown.js"></script>
+        <script src="javascripts/button.js"></script>
     </body>
 </html>
