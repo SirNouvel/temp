@@ -335,6 +335,16 @@ video.style {
     opacity: var(--magic);
     animation: appear 1.5s cubic-bezier(0.075, 0.820, 0.165, 1.000);
     animation-fill-mode: forwards;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.giggle {
+    clip-path: path("M12 4.248c-3.148-5.402-12-3.825-12 2.944 0 4.661 5.571 9.427 12 15.808 6.43-6.381 12-11.147 12-15.808 0-6.792-8.875-8.306-12-2.944z");
+    height: 23px;
+    width: 26px;
+    transform: scale(9);
 }
 
 @keyframes appear {
