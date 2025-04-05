@@ -33,11 +33,68 @@
     }
 
 
+.colorbox {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
 
+.colortheme {
+    height: 110px;
+    width: 800px;
+    border: 5px solid #efff64; 
+    display: flex;
+}
 
+.color1 {
+    background-color: #FFFFFF ;
+    height: 100px;
+    width: 100px;
+}
 
+.color2 {
+    background-color: #ffecae;
+    height: 100px;
+    width: 100px;
+}
 
+.color3 {
+    background-color: #ff7d00;
+    height: 100px;
+    width: 100px;
+}
 
+.color4 {
+    background-color: #b91515;
+    height: 100px;
+    width: 100px;
+}
+
+.color5 {
+    background-color: #652200;
+    height: 100px;
+    width: 100px;
+}
+
+/* #467e5a   #2f5228*/
+
+.color6 {
+    background-color: #2f5228;
+    height: 100px;
+    width: 100px;
+}
+
+.color7 {
+    background-color: #000000;
+    height: 100px;
+    width: 100px;
+}
+
+.color8 {
+    background-color: #7e4c1d;
+    height: 100px;
+    width: 100px;
+}
 
 
 
@@ -108,6 +165,8 @@ img.logo-style {
 
 .header-ribbon {
     animation: slide-in-top 1.5s cubic-bezier(0.075, 0.820, 0.165, 1.000);
+    animationnn: shrivel 1.0s cubic-bezier(0.075, 0.820, 0.165, 1.000);
+    animation-fill-mode: forwards;
 }
 
 @keyframes slide-in-top {
@@ -122,12 +181,136 @@ img.logo-style {
     }
 }
 
+
+@keyframes {
+    0% {
+        padding-top: 45px;
+        --notip: 100%;
+        --tiplength: 60%;
+        clip-path: polygon(var(--girthh) 0, calc(100% - var(--girthh)) 0%, calc(100% - var(--girthh)) var(--tiplength), 50% var(--notip), var(--girthh) var(--tiplength));
+    }
+
+    50% {
+
+    }
+
+
+}
+
+
+
+
+
+
+keyframes shrivel {
+    0% {
+        padding-top: 45px;
+        --notip: 100%;
+        --tiplength: 60%;
+        clip-path: polygon(var(--girthh) 0, calc(100% - var(--girthh)) 0%, calc(100% - var(--girthh)) var(--tiplength), 50% var(--notip), var(--girthh) var(--tiplength));
+    }
+
+    100% {
+        padding-top: 28px;
+        --notip: 70%;
+        --tiplength: 50%;
+        clip-path: polygon(var(--girthh) 0, calc(100% - var(--girthh)) 0%, calc(100% - var(--girthh)) var(--tiplength), 50% var(--notip), var(--girthh) var(--tiplength));
+    }
+}
+
+@keyframes brick {
+    0% {
+        padding-top: 45px;
+        --tiplength:60%;
+        --notip: 100%;
+        clip-path: polygon(var(--girthh) 0, calc(100% - var(--girthh)) 0%, calc(100% - var(--girthh)) var(--tiplength), 50% var(--notip), var(--girthh) var(--tiplength));
+    }
+
+    40% {
+        --tiplength:100%;
+        clip-path: polygon(var(--girthh) 0, calc(100% - var(--girthh)) 0%, calc(100% - var(--girthh)) var(--tiplength), 50% var(--notip), var(--girthh) var(--tiplength));
+    }
+    41% {
+        padding-top: 45px;
+    }
+
+
+    50% {
+        padding-top: 167px;
+    }
+
+    60% {
+        --tiplength: 100%;
+        padding-top: 167px;
+        --notip: 100%; 
+        clip-path: polygon(var(--girthh) 0, calc(100% - var(--girthh)) 0%, calc(100% - var(--girthh)) var(--tiplength), 50% var(--notip), var(--girthh) var(--tiplength));
+    }
+
+    90% {
+        --tiplength: 50%;
+        --notip: 50%;
+        padding-top: 28px;
+        clip-path: polygon(var(--girthh) 0, calc(100% - var(--girthh)) 0%, calc(100% - var(--girthh)) var(--tiplength), 50% var(--notip), var(--girthh) var(--tiplength));
+    }
+
+    100% {
+        --tiplength: 50%;
+        --notip: 63%;
+        padding-top: 28px;
+        clip-path: polygon(var(--girthh) 0, calc(100% - var(--girthh)) 0%, calc(100% - var(--girthh)) var(--tiplength), 50% var(--notip), var(--girthh) var(--tiplength));
+    }
+
+}
+
+@keyframes small {
+    0% {
+        --tiplength:60%;
+        --notip:100%;
+        padding-top:45px;
+        clip-path: polygon(var(--girthh) 0, calc(100% - var(--girthh)) 0%, calc(100% - var(--girthh)) var(--tiplength), 50% var(--notip), var(--girthh) var(--tiplength));
+    }
+
+    50% {
+        --notip: 75%;
+        --tiplength: 60%;
+        padding-top: 45px;
+        clip-path: polygon(var(--girthh) 0, calc(100% - var(--girthh)) 0%, calc(100% - var(--girthh)) var(--tiplength), 50% var(--notip), var(--girthh) var(--tiplength));
+    }
+
+    80% {
+        --tiplength: 50%;
+        --notip: 50%;
+        padding-top: 28px;
+        clip-path: polygon(var(--girthh) 0, calc(100% - var(--girthh)) 0%, calc(100% - var(--girthh)) var(--tiplength), 50% var(--notip), var(--girthh) var(--tiplength));
+    }
+
+    100% {
+        padding-top: 35px;
+        --tiplength:53%;
+        --notip:60%;
+        clip-path: polygon(var(--girthh) 0, calc(100% - var(--girthh)) 0%, calc(100% - var(--girthh)) var(--tiplength), 50% var(--notip), var(--girthh) var(--tiplength));
+    }
+}
+
+
+/*
+
+    end of ribbion
+
+*/
+/*
+    
+    start of dropdown
+
+*/
+
 .dropdown-group {
     justify-content: flex-end;
     display: flex;
     height: 20%;
     z-index: 4;
     width: 100%;
+    --popp: none;
 }
 
 .drop-down {
@@ -142,7 +325,6 @@ img.logo-style {
     color: white;
     font-size: .9em;
     cursor: pointer;
-    
 }
 
 a.drop-button {
@@ -155,10 +337,11 @@ a.drop-button {
 .drop-down:hover, .drop-down:focus {
     background-color: #ffffff;
     color: #FF7D00;
+    --popp: block;
 }
 
 .dropdown-content {
-    display: none;
+    display: var(--popp);
     position: absolute;
     min-width: 160px;
  /* box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2); */
@@ -169,8 +352,53 @@ a.drop-button {
     overflow: hidden;
     border-radius: 0px 15px 15px 15px;
     border: 5px solid;
-    border-color: #ffffff
+    border-color: #ffffff;
+
+    animation: shower 0.6s cubic-bezier(0.075, 0.820, 0.165, 1.000);
+    animation-fill-mode: forwards;
 }
+
+
+@keyframes shower {
+    0% {
+        height: 0px;
+    }
+
+    100% {
+        height: 144px;
+    }
+}
+
+
+..dropdown-content {
+    animation: erectile-dysfunction 0.6s cubic-bezier(0.075, 0.820, 0.165, 1.000);
+    animation-fill-mode: forwards;
+}
+
+@keyframes erectile-dysfunction {
+    0% {
+        height: 144px;
+        display:block
+    }
+
+    25% {
+        opacity: 100%;
+    }
+
+    50% {
+        opacity: 0%;
+    }
+
+    100% {
+        opacity: 0%;
+        height: 0px;
+        display: none;
+    }
+}
+
+
+
+
 
     .dropdown-content a {
         display: block;
@@ -192,8 +420,15 @@ a.drop-button {
     border-radius: 15px 0px 15px 15px; 
 }
 
-.show {
+.showX {
     display: block;
+    --jvjcol: #FF7D00;
+    --jvjbccol: #ffffff;
+}
+
+.showY {
+    color: #FF7D00;
+    background-color: #ffffff;
 }
 
 /*    fix laterrrrrr
@@ -203,13 +438,6 @@ a.drop-button {
 } 
 
 */
-
-..drop-down:hover .dropdown-content {
-    display: block;
-}
-
-
-
 
 
 /*
@@ -304,6 +532,7 @@ video.style {
     background-color: firebrick;
     animation: grower 1.5s cubic-bezier(0.075, 0.820, 0.165, 1.000);
     animation-fill-mode: forwards;
+    animation-direction: reverse;
 }
 
 @keyframes grower {
