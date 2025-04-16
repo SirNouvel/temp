@@ -118,6 +118,12 @@
     justify-content: flex-end;
 }
 
+.sticky {
+    position:sticky;
+    height: 100%;
+    width: 100%;
+}
+
 .header-top {
     width: 100%;
     background-color: #ffecae;
