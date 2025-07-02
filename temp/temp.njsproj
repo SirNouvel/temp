@@ -33,6 +33,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Content Include="app.js" />
+    <Content Include="public\images\logoo.png" />
     <Content Include="public\images\favicon\apple-touch-icon-114x114.png" />
     <Content Include="public\images\favicon\apple-touch-icon-120x120.png" />
     <Content Include="public\images\favicon\apple-touch-icon-144x144.png" />
@@ -53,9 +54,11 @@
     <Content Include="public\images\favicon\mstile-310x310.png" />
     <Content Include="public\images\favicon\mstile-70x70.png" />
     <Content Include="public\images\plzRemove.jpg" />
-    <Content Include="public\images\ughhh.png" />
-    <Content Include="public\images\logo.png" />
+    <Content Include="public\images\shadow.png" />
     <Content Include="public\images\smexy.jpg" />
+    <Content Include="public\images\bg2.png" />
+    <Content Include="public\images\bg1.png" />
+    <Content Include="public\images\hero.png" />
     <Content Include="public\javascripts\button.js" />
     <Content Include="public\javascripts\dropdown.js">
       <SubType>Code</SubType>
