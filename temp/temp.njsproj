@@ -59,10 +59,12 @@
     <Content Include="public\images\bg2.png" />
     <Content Include="public\images\bg1.png" />
     <Content Include="public\images\hero.png" />
+    <Content Include="public\images\ughhh.png" />
     <Content Include="public\javascripts\button.js" />
     <Content Include="public\javascripts\dropdown.js">
       <SubType>Code</SubType>
     </Content>
+    <Content Include="public\videos\0201.mp4" />
     <Content Include="public\videos\ehh.mp4" />
     <Content Include="public\videos\film.mp4" />
     <Content Include="public\videos\footage.mp4" />

@@ -131,6 +131,39 @@
     position: absolute;
     height: 80%;
     top: 0px;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+
+}
+
+.grouper {
+    width: 25%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.boxx {
+    height: 50px;
+    width: 100px;
+    background-color: #c40606;
+    color: #ffffff;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration-thickness: 5px;
+}
+
+    .boxx:hover, .boxx:focus {
+        background-color: #ffffff;
+        color: #c40606;
+    }
+
+.header-top a {
+    text-decoration: none;
 }
 
 .header-bottom {
@@ -326,7 +359,7 @@ keyframes shrivel {
 .drop-down {
     position: relative;
     display: flex;
-    width: 90px;
+    width: 115px;
     border-style: solid;
     border-width: 0px 0px 0px 3px;
     border-left-color: #ff6c00;
@@ -344,6 +377,14 @@ a.drop-button {
     z-index: 4;
 }
 
+svg g#SVGRepo_iconCarrier {
+    fill: #ffffff;
+}
+
+    .drop-down:hover > svg g#SVGRepo_iconCarrier {
+        fill: #FF7D00;
+    }
+
 .drop-down:hover, .drop-down:focus {
     background-color: #ffffff;
     color: #FF7D00;
@@ -354,7 +395,6 @@ a.drop-button {
     display: var(--popp);
     position: absolute;
     min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2); 
     z-index: 2;
     top: 100%;
     left: 0px;
@@ -778,6 +818,19 @@ divtitle {
 /*
     end of table design
 */
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
